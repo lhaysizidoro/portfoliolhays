@@ -1,0 +1,72 @@
+.nav {
+    text-align: left;
+}
+
+.app-menu__list {
+    display: flex;
+}
+
+.app-menu__item {
+    list-style: none;
+}
+
+.app-menu__link {
+    color: #595959;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-right: 4rem;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.app-menu__link:hover {
+    text-decoration: underline wavy #9067c6; 
+    text-decoration-thickness: 3px; 
+}
+
+.mobile_btn {
+    display: none;
+}
+
+/* Estilo específico para dispositivos móveis */
+.app-menu.mobile {
+    flex-direction: column;
+}
+
+.app-menu.mobile .app-menu__link {
+    margin-right: 0; /* Remova a margem para dispositivos móveis */
+    margin-bottom: 1rem; /* Adicione um espaçamento inferior entre os itens para dispositivos móveis */
+}
+
+@media screen and (max-width: 480px) {
+    .mobile_btn {
+        display: block;
+        position: absolute;
+        right: 1rem;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    .menu {
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        left: -100%;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: auto;
+        height: 100vh;
+        background-color: #f8f8f8;
+        z-index: 10;
+        transition: left 1s;
+    }
+
+    .active {
+        left: 0;
+    }
+
+    .navbar a {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,101 @@
+.projetos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+.projeto-card {
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+    height: 530px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    flex-basis: calc(40%);
+    border: #b1b1b1 1px solid;
+    padding: 10px 10px 10px 10px;
+}
+
+.projeto-card img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s;
+}
+
+.projeto-card h1 {
+
+    text-align: center;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.overlay p {
+    margin: 20px;
+    text-align: justify;
+    line-height: 2.0;
+}
+
+.projeto-card:hover {
+    transform: scale(1.1);
+}
+
+.projeto-card:hover img {
+    opacity: 0.5;
+}
+
+.projeto-card:hover .overlay {
+    opacity: 1;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;}
+
+    .botao-card {
+
+        margin-right: 10px;
+        text-decoration: none;
+    }
+
+    .botao-card button {
+        width: 50px;
+        height: 50px;
+        border: none;
+        cursor: pointer;
+        border-radius: 50%;
+        background-color: #fff;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .botao-card img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .botao-card:hover {
+        opacity: 0.7;
+}
+

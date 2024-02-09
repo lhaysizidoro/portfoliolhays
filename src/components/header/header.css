@@ -1,0 +1,45 @@
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  margin-top: 10px;
+ 
+}
+
+.app-header-logo {
+  display: flex;
+  align-items: center;
+  margin-left: 120px;
+}
+
+.app-header-logo img {
+  width: auto;
+  height: 50px;
+}
+
+.app-menu {
+  display: flex;
+  margin-right: 50px;
+}
+
+.app-menu__list {
+  display: flex;
+  list-style: none;
+}
+
+.app-menu__item {
+  margin-right: 2rem; /* ajuste conforme necessário */
+}
+
+.app-menu__link {
+  color: #000;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.app-menu__link:hover {
+  text-decoration: underline wavy #9067c6;
+  text-decoration-thickness: 3px;
+}

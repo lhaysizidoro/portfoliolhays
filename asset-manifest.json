@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6248c460.css",
+    "main.js": "/static/js/main.e51fcffb.js",
+    "static/js/592.559d4803.chunk.js": "/static/js/592.559d4803.chunk.js",
+    "static/media/sobreimg.png": "/static/media/sobreimg.7e6d84b603adc6c20c3b.png",
+    "static/media/projeto1.png": "/static/media/projeto1.22e00a21092d432899d1.png",
+    "static/media/perfilhomepage.png": "/static/media/perfilhomepage.1cfc3c9b8d742702c223.png",
+    "static/media/projeto2.png": "/static/media/projeto2.d7493e434049945b2732.png",
+    "static/media/pesquisa.png": "/static/media/pesquisa.a5160153c559407901b2.png",
+    "static/media/ui.png": "/static/media/ui.0314550f5e2d550a4411.png",
+    "static/media/github.png": "/static/media/github.44eee0c4a6c25b0d7347.png",
+    "static/media/email.png": "/static/media/email.67bda94140af311d041f.png",
+    "static/media/olho.png": "/static/media/olho.77791c932ab34a38b80f.png",
+    "static/media/figma.png": "/static/media/figma.20745db82cc7f7826088.png",
+    "static/media/css.png": "/static/media/css.7654ce00c5ac2e76e015.png",
+    "static/media/html.png": "/static/media/html.31497a13d5b51cea9b7d.png",
+    "index.html": "/index.html",
+    "main.6248c460.css.map": "/static/css/main.6248c460.css.map",
+    "main.e51fcffb.js.map": "/static/js/main.e51fcffb.js.map",
+    "592.559d4803.chunk.js.map": "/static/js/592.559d4803.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6248c460.css",
+    "static/js/main.e51fcffb.js"
+  ]
+}

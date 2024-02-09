@@ -1,0 +1,33 @@
+.about-center {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    margin: 40px;
+}
+
+
+
+.about-right {
+    width: 40%;
+    margin-right: 60px;
+}
+
+.about-left {
+    width: 40%;
+}
+
+.about-left p {
+    text-align: justify;
+    line-height: 2.0;
+}
+
+.social {
+    justify-content: center;
+}
+
+
+
+.about-right img {
+    width: 100%;
+    margin-left: 50px;
+}

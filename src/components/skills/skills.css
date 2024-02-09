@@ -1,0 +1,60 @@
+.square {
+    flex-direction: column;
+    position: relative;
+    background-color: #A1B5D8;
+    height: 300px;
+    width: 100%;
+    margin-top: -25px;
+    z-index: 3;
+
+}
+.square h1{
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+.wave{
+    flex-direction: column;
+    width: 100%;
+    z-index: 1;
+    margin-bottom: -5px;
+    margin-top: 50px;
+}
+
+
+.skill{
+    text-align: center;
+    background-color: #A1B5D8;
+    margin-top: -25px;
+    padding-bottom: 50px;
+    padding-left: 20PX;
+    padding-right: 20PX;
+
+}
+
+.skill img{
+    width: 80px;
+}
+
+
+.skill-icon {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Quatro colunas */
+  grid-template-rows: repeat(2, auto); /* Duas linhas */
+  grid-gap: 20px; /* Espaçamento entre os itens */
+}
+
+.skill-item {
+  text-align: center;
+}
+
+.skill-item img {
+  max-width: 80px; /* Define uma largura máxima para as imagens */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+.skill-item :hover{
+    transform:scale(1.20);
+    transition: 0.6s;
+}
