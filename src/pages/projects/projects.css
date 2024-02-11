@@ -44,6 +44,7 @@
     color: #fff;
     opacity: 0;
     transition: opacity 0.3s;
+    flex-direction: column;
 }
 .overlay p {
     margin: 20px;
@@ -68,13 +69,13 @@
     flex-direction: row;
     justify-content: center;
     position: absolute;
-    bottom: 10px;
     width: 100%;}
 
     .botao-card {
 
         margin-right: 10px;
         text-decoration: none;
+        display: flex;
     }
 
     .botao-card button {
@@ -99,3 +100,54 @@
         opacity: 0.7;
 }
 
+
+
+@media screen and (max-width: 768px) {
+    .projetos-container{
+        width: auto;
+    }
+    .projeto-card{
+        flex-direction: column;
+        flex-basis: calc(80%);
+        
+
+    }
+    .projeto-card h1{
+        transform: scale(0.8);
+    }
+
+    .botao-card button{
+        transform: scale(0.8);
+    }
+}
+@media screen and (max-width: 480px) {
+    .projetos-container{
+        width: auto;
+
+    }
+    .projeto-card{
+        flex-direction: column;
+        flex-basis: calc(80%);
+        height: 330;
+        
+
+    }
+    .botoes{
+        height: 50px;
+    }
+
+    .botao-card{
+        height: 50px;
+    }
+   
+    .projeto-card h1{
+        transform: scale(0.8);
+    }
+    .botao-card button{
+        transform: scale(0.8);
+        margin-top: 100px;
+    }
+    .overlay p{
+        margin: 2px;
+    }
+}

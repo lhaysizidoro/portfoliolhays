@@ -9,9 +9,9 @@
 
 .home-left {
   display: flex;
-  flex-direction: column; 
-  align-items: center; 
-  justify-content: center; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: relative;
   margin-left: 200px;
 }
@@ -22,14 +22,19 @@
   font-size: 50px;
   z-index: 1;
   margin-bottom: 10px;
-  animation: slide 4s ;
+  animation: slide 4s;
 
 }
- 
+
 
 @keyframes slide {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(0%); }
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
 }
 
 
@@ -57,12 +62,13 @@
   background-color: #99979c
 }
 
-.social{
+.social {
   flex-direction: row;
   margin: 10px;
 
 }
-.social img{
+
+.social img {
   width: 60px;
   margin: 10px;
 }
@@ -84,21 +90,81 @@
 }
 
 
+.portfolio h1 {
+  text-align: center;
+}
 
-@media screen and (max-width: 480px) {
-  .portfolio{
-    flex-direction: column;
-    gap: 7rem;
-    height: 64rem;
-  }
 
-  .home{
-    transform: scale(0.5);
+
+
+/* ... responsividade.. */
+
+
+@media screen and (max-width: 768px) {
+  .home {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
   }
 
+  .home-left {
+    margin: 0;
 
+  }
 
+  .home-right {
+    width: 60%;
+    margin: 0;
+    align-items: center;
+  }
+
+  .home-right img {
+    width: 100%;
+    align-self: center;
+
+    .home-left h1 {
+      font-size: 3em;
+    }
+
+    .portfolio h1 {
+      transform: scale(0.8);
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .portfolio {
+      flex-direction: column;
+      gap: 2rem;
+      height: auto;
+    }
+
+    .home {
+      transform: scale(0.8);
+    }
+
+    .home-right {
+      width: 100%;
+    }
+
+    .home-right img {
+      width: 100%;
+      align-self: center;
+    }
+
+    .home-left h1 {
+      font-size: 1.5em;
+    }
+
+    .home-left h2 {
+      font-size: 1.5em;
+    }
+
+    .home-left button {
+      width: 100px;
+      height: 30px;
+    }
+
+    .social img {
+      width: 30px;
+    }
+  }
 }

@@ -7,16 +7,16 @@
 
 
 
-.about-right {
+.about-left {
     width: 40%;
     margin-right: 60px;
 }
 
-.about-left {
+.about-right {
     width: 40%;
 }
 
-.about-left p {
+.about-right p {
     text-align: justify;
     line-height: 2.0;
 }
@@ -27,7 +27,40 @@
 
 
 
-.about-right img {
+.about-left img {
     width: 100%;
     margin-left: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .about-center{
+        flex-direction: column;
+    }
+    .about-right{
+        width: 100%;
+    }
+    .about-right h1{
+        text-align: center;
+        transform: scale(0.8);
+    
+    }
+
+    .social{
+        align-items: center;
+    }
+    .about-left{
+        align-items: center;
+        width: 100%;
+    }
+    .about-left img{
+        width: 70%;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .about-center{
+        flex-direction: column;
+    }
+
 }

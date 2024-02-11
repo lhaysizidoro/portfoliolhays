@@ -9,7 +9,7 @@ const ProjetoCard = ({ projeto }) => {
     const [hovered, setHovered] = useState(false);
 
     const handleButtonClick = () => {
-        // Adicione a lógica desejada quando o botão for clicado
+        
         console.log(`Botão do Projeto ${projeto.nome} clicado`);
     };
 
@@ -26,7 +26,8 @@ const ProjetoCard = ({ projeto }) => {
             {hovered && (
                 <div className="overlay">
                     <p>{projeto.descricao}</p>
-
+                    <br/>
+                    <span >Tags: {projeto.tags}</span>
                 </div>
 
 
@@ -49,7 +50,7 @@ const ProjetoCard = ({ projeto }) => {
                         </button> </a>
                 </div>
             </div>
-            <p>Tags: {projeto.tags}</p>
+           
 
 
         </div>

@@ -2,10 +2,11 @@
   background: #f7e2cc;
   text-align: center;
   width:100%;
-  height:30px;
+  height:20px;
   position:fixed;
   bottom:0;
   left:0;
+  display: block;
 
 }
 
@@ -16,11 +17,18 @@
   
 }
 
+
+
+@media screen and (max-width: 768px) {
+  .app-footer{
+    display: none;
+  }
+}
+
+
+
 @media screen and (max-width: 480px) {
   .app-footer{
-    width: auto;
-    flex-direction: column;
-    gap: 7rem;
-   
-  }
+      display: none;
+    }
 }

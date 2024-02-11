@@ -12,10 +12,10 @@ function About() {
   return (
     <div className="about">
       <div className="about-center">
-        <div className="about-right">
+        <div className="about-left">
           <img src={sobreimg} alt="" />
         </div>
-        <div className="about-left">
+        <div className="about-right">
           <h1>Olá,
 
             meu nome é Lhays Izidoro! </h1>
