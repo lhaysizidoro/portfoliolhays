@@ -5,13 +5,14 @@
     gap: 80px;
     margin-top: 100px;
     margin-bottom: 200px;
+    border-radius: 5px;
 }
 
 .projeto-card {
     position: relative;
     margin: 10px;
     overflow: hidden;
-    height: 530px;
+    height: 400px;
     cursor: pointer;
     transition: transform 0.3s;
     flex-basis: calc(40%);
@@ -46,6 +47,7 @@
     transition: opacity 0.3s;
     flex-direction: column;
 }
+
 .overlay p {
     margin: 20px;
     text-align: justify;
@@ -69,85 +71,220 @@
     flex-direction: row;
     justify-content: center;
     position: absolute;
-    width: 100%;}
-
-    .botao-card {
-
-        margin-right: 10px;
-        text-decoration: none;
-        display: flex;
-    }
-
-    .botao-card button {
-        width: 50px;
-        height: 50px;
-        border: none;
-        cursor: pointer;
-        border-radius: 50%;
-        background-color: #fff;
-        color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .botao-card img {
-        width: 50px;
-        height: 50px;
-    }
-
-    .botao-card:hover {
-        opacity: 0.7;
+    width: 100%;
 }
+
+.botao-card {
+
+    margin-right: 10px;
+    text-decoration: none;
+    display: flex;
+}
+
+.botao-card button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao-card img {
+    width: 50px;
+    height: 50px;
+}
+
+.botao-card:hover {
+    opacity: 0.7;
+}
+
+/* Estilos para o modal */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65%;
+    border: #b1b1b1 0.5px solid;
+
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 30px 30px 30px 30px;
+}
+
+/* Estilos para o conteúdo dentro do modal */
+.modal-content {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.close {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    justify-content: right;
+}
+
+
+.close:hover {
+    transform: scale(1.1);
+}
+
+
+.close:active {
+    filter: brightness(80%);
+}
+
+
+.modal-image {
+    width: 450px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+}
+
+
+.modal-title {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+.modal-description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: justify;
+    padding-right: 20px;
+    padding-left: 20px;
+    line-height: 1.5;
+}
+
+
+.botao-card {
+    margin-top: 20px;
+    align-self: center;
+    gap: 20px;
+    background-color: white;
+
+}
+
+.botao-card button {
+    background-color: #9067c6;
+    width: 200px;
+    height: 30px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 400;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-right: 50px;
+    text-decoration: none;
+}
+
+.botao-card button:last-child {
+    margin-right: 0;
+}
+
+.botao-card button:hover {
+    background-color: #b8b0db;
+}
+
+
+
+
+
+
+
 
 
 
 @media screen and (max-width: 768px) {
-    .projetos-container{
+    .projetos-container {
         width: auto;
     }
-    .projeto-card{
+
+    .projeto-card {
         flex-direction: column;
         flex-basis: calc(80%);
-        
+
 
     }
-    .projeto-card h1{
+
+    .projeto-card h1 {
         transform: scale(0.8);
     }
 
-    .botao-card button{
+    .botao-card button {
         transform: scale(0.8);
     }
+
+    .modal {
+        width: 90%;
+    }
+
+
 }
+
 @media screen and (max-width: 480px) {
-    .projetos-container{
+    .projetos-container {
         width: auto;
 
     }
-    .projeto-card{
+
+    .projeto-card {
         flex-direction: column;
         flex-basis: calc(80%);
         height: 330;
-        
+
 
     }
-    .botoes{
+
+    .botoes {
         height: 50px;
     }
 
-    .botao-card{
+    .botao-card {
         height: 50px;
     }
-   
-    .projeto-card h1{
+
+    .projeto-card h1 {
         transform: scale(0.8);
     }
-    .botao-card button{
+
+    .botao-card button {
         transform: scale(0.8);
         margin-top: 100px;
     }
-    .overlay p{
+
+    .overlay p {
         margin: 2px;
+    }
+
+    .modal {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .modal-content {
+        padding: 0;
+    }
+
+    .modal-image {
+     width: 20%;
     }
 }

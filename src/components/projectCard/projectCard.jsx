@@ -1,70 +1,66 @@
 import React, { useState } from 'react';
-import github from './../../assets/github.png'
-import olho from './../../assets/olho.png'
+import Modal from 'react-modal';
+import '../../pages/projects/projects.css';
+import x from '../../assets/x.png'
 
 
 
+Modal.setAppElement('#root');
 
 const ProjetoCard = ({ projeto }) => {
-    const [hovered, setHovered] = useState(false);
+    const [modalIsOpen, setIsOpen] = useState(false);
 
-    const handleButtonClick = () => {
-        
-        console.log(`Botão do Projeto ${projeto.nome} clicado`);
+    const handleOpenModal = () => {
+        setIsOpen(true);
     };
 
+    const handleCloseModal = () => {
+        setIsOpen(false);
+    };
 
     return (
-        <div className="projeto-card"
-            onMouseEnter={() => setHovered(true)}
-            onMouseLeave={() => setHovered(false)}
-        >
-            <img
-                src={projeto.imagem}
-                alt={projeto.nome}
-            />
-            {hovered && (
-                <div className="overlay">
-                    <p>{projeto.descricao}</p>
-                    <br/>
-                    <span >Tags: {projeto.tags}</span>
-                </div>
-
-
-            )}
-
+        <div className="projeto-card">
+            <img src={projeto.imagem} alt={projeto.nome} onClick={handleOpenModal} />
             <h1>{projeto.nome}</h1>
-            <div className="botoes">
 
-                <div className="botao-card">
-                    <a id='site' href={projeto.linksite}>
-                        <button className='botao-card'>
-                            <img src={olho} ></img>
-                        </button> </a>
+            <Modal
+                isOpen={modalIsOpen}
+                onRequestClose={handleCloseModal}
+                contentLabel="Detalhes do Projeto"
+                className="modal"
+            >
+
+{modalIsOpen && (
+  <div>
+    <img id
+      src={x} 
+      alt="Descrição da imagem" 
+      onClick={handleCloseModal} 
+    />
+  </div>
+)}
+                <div className="modal-content">
+                    <div className="modal-left">
+                        <img src={projeto.imagem} alt={projeto.nome} className="modal-image" />
+                    </div>
+                    <div className="modal-right">
+                        <h2 className="modal-title">{projeto.nome}</h2>
+                        <p className="modal-description">{projeto.descricao}</p>
+
+                    </div>
 
                 </div>
                 <div className="botao-card">
-                    <a id='git' href={projeto.linkgit}>
-                        <button className='botao-card'>
-                            <img src={github} ></img>
-                        </button> </a>
+                    <a href={projeto.linksite}>
+                        <button>Ver projeto</button>
+                    </a>
+                    <a href={projeto.linkgit}>
+                        <button>Ver no Github</button>
+                    </a>
                 </div>
-            </div>
-           
-
-
+            </Modal>
         </div>
-
-
-
-
-    )
+    );
 }
-
-
-
-
-
-
 
 export default ProjetoCard;
