@@ -1,6 +1,7 @@
 import projeto1 from '../../assets/projeto1.png'
 import projeto2 from '../../assets/projeto2.png'
 import projeto3 from '../../assets/projeto3.png'
+import projeto4 from '../../assets/projeto4.png'
 
 const projetos = [
     {
@@ -29,6 +30,15 @@ const projetos = [
       linkgit: 'https://github.com/lhaysizidoro/weather_forecast',
       linksite: 'https://weather-mu-three.vercel.app/',
   },
+
+  {
+    id: 4,
+    nome: 'Inspirô Terapias Holísticas',
+    imagem: projeto4,
+    descricao: 'Inspirô é um aplicativo  que facilita a conexão entre terapeutas especializados em abordagens holísticas e pacientes em busca de bem-estar. Navegue por uma ampla variedade de terapias, desde a meditação mindfulness até a acupuntura, e encontre o terapeuta perfeito para atender às suas necessidades.',
+
+    linksite: 'https://www.behance.net/gallery/199691741/Inspiro-Aplicativo-para-terapias-holisticas-UXUI',
+}
  
 ]
 
