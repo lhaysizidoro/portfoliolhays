@@ -22,6 +22,8 @@ const ProjetoCard = ({ projeto }) => {
         <div className="projeto-card">
             <img src={projeto.imagem} alt={projeto.nome} onClick={handleOpenModal} />
             <h1>{projeto.nome}</h1>
+            
+            
 
             <Modal
                 isOpen={modalIsOpen}
@@ -45,7 +47,8 @@ const ProjetoCard = ({ projeto }) => {
                     </div>
                     <div className="modal-right">
                         <h2 className="modal-title">{projeto.nome}</h2>
-                        <p className="modal-description">{projeto.descricao}</p>
+                        <p className="modal-description">{projeto.descricao} <hr/> <span>{projeto.tags}</span> </p>
+                        
 
                     </div>
 

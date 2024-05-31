@@ -20,7 +20,7 @@ function Skills() {
       </section>
 
       <div className="skill">
-        <h1>SKILLS</h1>
+        <h1>Habilidades</h1>
 
         <div className="skill-icon">
           <div className="skill-item"> <p>CSS</p>  <img src={css} alt="" /> </div>

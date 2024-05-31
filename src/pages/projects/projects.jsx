@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjetoCard from '../../components/projectCard/projectCard'
-import './projects.css'; // Importe os estilos específicos para esta página
+import './projects.css';
 import projetos from './dataprojects';
 
 

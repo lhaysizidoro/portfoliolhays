@@ -11,7 +11,7 @@ const projetos = [
       descricao: ' Lavanda é um e-commerce de cosméticos com uma interface moderna e intuitiva desenvolvido em React. Cada item possui uma página detalhada, facilitando a navegação dos clientes. O processo de compra é simples, com um carrinho de compras claro e opções de pagamento seguras.',
       linkgit: 'https://github.com/lhaysizidoro/lavandawebsite',
       linksite: 'https://lavandawebsite.vercel.app/',
-      tags: "React", 
+      tags: "React" 
     },
     {
         id: 2,
@@ -19,7 +19,7 @@ const projetos = [
         imagem: projeto2,
         descricao: 'Daily UX Writing Challenge é um desafio de escrita. Alguns desafios devem ser resolvidos utilizando conhecimentos de Ux Writing e proporcionando mensagens de sistemas e aplicativos da maneira mais clara e coerente possível.',
         linksite: 'https://www.behance.net/gallery/151117079/Ux-Writing-Challenge-Parte-1',
-        tags: "Ux Design, Ux Writing" 
+        tags: "Ux Writing"
     },
    
     {
@@ -29,6 +29,7 @@ const projetos = [
       descricao: 'A página de previsão do tempo em JavaScript utiliza uma API para fornecer informações meteorológicas atualizadas. Os usuários podem inserir o nome da cidade desejada, e a página exibe a previsão do tempo, incluindo temperatura, condições climáticas e umidade.',
       linkgit: 'https://github.com/lhaysizidoro/weather_forecast',
       linksite: 'https://weather-mu-three.vercel.app/',
+      tags: "JavaScript, API",
   },
 
   {
@@ -36,8 +37,8 @@ const projetos = [
     nome: 'Inspirô Terapias Holísticas',
     imagem: projeto4,
     descricao: 'Inspirô é um aplicativo  que facilita a conexão entre terapeutas especializados em abordagens holísticas e pacientes em busca de bem-estar. Navegue por uma ampla variedade de terapias, desde a meditação mindfulness até a acupuntura, e encontre o terapeuta perfeito para atender às suas necessidades.',
-
     linksite: 'https://www.behance.net/gallery/199691741/Inspiro-Aplicativo-para-terapias-holisticas-UXUI',
+    tags: "UX/UI"
 }
  
 ]
